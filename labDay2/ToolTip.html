@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="shortcut icon" href="css/font-awesome.css" />
+    <script src="js/jquery-3.1.1.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.src.js"></script>
+    <![endif]-->
+    <style>
+        .l1{
+            font-size: 50px;
+            margin-top: 100px;
+        }
+        .test + .tooltip > .tooltip-inner {
+            background-color: lightcoral;
+            color: darkblue;
+            border: 1px solid pink;
+            padding: 15px;
+            font-size: 30px;
+            
+        }
+        
+        .test + .tooltip.top > .tooltip-arrow {
+            border-top: 5px solid pink;
+        }
+      
+        .test + .tooltip.bottom > .tooltip-arrow {
+            border-bottom: 5px solid blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="list-inline">
+            <li class="l1"><a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Woooow!">Top</a></li>
+            <li class="l1"><a class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Yeah!">Bottom</a></li>
+           
+        </ul>
+        <h2>Dropdowns</h2>
+        <div class="dropup">
+          <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown" style="margin:50px;">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                </ul>
+              </div> 
+
+              <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu3" data-toggle="dropdown">Icons
+                    <span class="caret"></span></button>
+             
+        
+               <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i>HTML</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i>CSS</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i>JavaScript</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="list-group-item"><i class="fa fa-book fa-fw"></i>About Us</a></li>
+                    </ul>
+        
+        
+        </div>
+
+        
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
